@@ -2,4 +2,4 @@
 
 use PiePHP\Core\Router;
 
-Router::connect('/', ['c' => 'welcome', 'a' => 'index']);
+Router::connect('/', 'WelcomeController@index')->name('welcome');
